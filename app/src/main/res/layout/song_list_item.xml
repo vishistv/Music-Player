@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginBottom="@dimen/sli_cv_margin_bottom"
+    android:background="?selectableItemBackgroundBorderless"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+
+        <ImageView
+            android:id="@+id/iv_album_pic_prev"
+            android:layout_width="@dimen/iv_w_h"
+            android:layout_height="@dimen/iv_w_h"
+            android:src="@drawable/hybrid_theory"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_album_pic_prev"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_album_pic_prev"
+            app:layout_constraintTop_toTopOf="@+id/iv_album_pic_prev">
+
+            <TextView
+                android:id="@+id/tv_song_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Song Title"
+                android:textSize="@dimen/sli_album_text_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_artist_album"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Artist Name  |  Album Name"
+                android:textSize="@dimen/sli_album_text_size" />
+
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

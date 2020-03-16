@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:backgroundTint="@color/colorPrimary">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:fontFamily="@font/abeezee_regular"
+        android:includeFontPadding="false"
+        android:text="@string/app_name"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/nav_menu_icon"
+        app:layout_constraintTop_toTopOf="@+id/nav_menu_icon" />
+
+    <ImageView
+        android:id="@+id/nav_menu_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/sv_search"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/shape" />
+
+    <SearchView
+        android:id="@+id/sv_search"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/sv_h"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/round_edittext"
+        android:drawableStart="@drawable/search"
+        android:fontFamily="@font/alewisdodi"
+        android:iconifiedByDefault="false"
+        android:queryBackground="@android:color/transparent"
+        android:textSize="@dimen/sv_text_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:theme="@style/AppSearchView" />
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/sv_search"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:background="@drawable/round_edittext"-->
+    <!--        android:drawableStart="@drawable/search"-->
+    <!--        android:drawablePadding="20dp"-->
+    <!--        android:fontFamily="@font/alewisdodi"-->
+    <!--        android:hint="@string/search_hint"-->
+    <!--        android:layout_marginStart="10dp"-->
+    <!--        android:layout_marginEnd="10dp"-->
+    <!--        android:paddingStart="15dp"-->
+    <!--        android:paddingTop="10dp"-->
+    <!--        android:paddingBottom="10dp"-->
+    <!--        android:textColorHint="@color/grey1"-->
+    <!--        android:textSize="15sp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/textView"/>-->
+
+    <ImageButton
+        android:id="@+id/ib_fav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:background="?selectableItemBackgroundBorderless"
+        android:onClick="onClickFavSongs"
+        android:src="@drawable/favorite"
+        app:layout_constraintBottom_toBottomOf="@+id/nav_menu_icon"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

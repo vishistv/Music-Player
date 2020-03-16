@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    //action bar layout
+    <dimen name="sv_margin_start">10dp</dimen>
+    <dimen name="sv_margin_end">10dp</dimen>
+    <dimen name="sv_h">50dp</dimen>
+    <dimen name="sv_text_size">15sp</dimen>
+
+    //activity media player
+    <dimen name="sb_ht">14dp</dimen>
+    <dimen name="sb_margin_side">30dp</dimen>
+    <dimen name="sb_margin_top">40dp</dimen>
+    <dimen name="time_margin_side">15dp</dimen>
+    <dimen name="time_margin_top">10dp</dimen>
+    <dimen name="time_text_size">13sp</dimen>
+    <dimen name="title_margin_top">40dp</dimen>
+    <dimen name="amp_title_text_size">20sp</dimen>
+    <dimen name="amp_album_text_size">15sp</dimen>
+    <dimen name="btn_play_pause_w_h">90dp</dimen>
+
+    //song list item
+    <dimen name="iv_w_h">65dp</dimen>
+    <dimen name="sli_title_text_size">18sp</dimen>
+    <dimen name="sli_album_text_size">16sp</dimen>
+    <dimen name="sli_cv_margin_bottom">8dp</dimen>
+
+</resources>

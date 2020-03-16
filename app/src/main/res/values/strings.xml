@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MPlayer</string>
+    <string name="search_hint">Search Music Title, Artists, Album etc</string>
+    <string name="desc">Listen to your favourite\nsongs from youtube</string>
+    <string name="fav_title">Favourites</string>
+    <string name="successfully_marked_fav">Added to Favourtie Songs</string>
+    <string name="successfully_removed_fav">Removed from Favourtie Songs</string>
+</resources>
